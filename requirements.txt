@@ -1,0 +1,15 @@
+# Compatibility requirements for environments that cannot use uv.
+# Canonical dependency metadata lives in pyproject.toml and uv.lock:
+#   uv sync
+# Keep this runtime-only list aligned with pyproject.toml. Research evaluation
+# packages (Torch, CLIP, LPIPS, DreamSim, DINOv2, PickScore, etc.) belong in a
+# future optional evaluation dependency group, not in the web-app runtime.
+
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-dotenv>=1.0.0
+httpx>=0.27.0
+pydantic>=2.9.0
+tavily>=1.1.0
+cloudinary>=1.44.1
+python-multipart>=0.0.21

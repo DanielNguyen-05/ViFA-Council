@@ -1,0 +1,1063 @@
+```json
+Return ONLY valid JSON (no markdown, no extra text).
+I want to scale/expand this image using outpainting. Please fill in the following JSON template with the most detailed information.
+
+{
+  "task_type": "outpainting",
+  "input_image": "",
+  "expansion_settings": {
+    "direction": "", 
+    "pixel_amount":,
+    "mask_blur":
+  },
+  "context_awareness": {
+    "original_style": "",
+    "seamless_blending_keywords": []
+  },
+  "scenarios": [
+    {
+      "scenario_id": "",
+      "description": "",
+      "prompt": ""
+    },
+    {
+      "scenario_id": "",
+      "description": "",
+      "prompt": ""
+    },
+    {
+      "scenario_id": "",
+      "description": "",
+      "prompt": ""
+    },
+    {
+      "scenario_id": "",
+      "description": "",
+      "prompt": ""
+    }
+  ]
+}
+```
+
+```
+Return ONLY valid JSON (no markdown, no extra text).
+I want to scale/expand this image using outpainting. Please fill in the following JSON template with the most detailed information.
+
+{
+  "task_type": "outpainting",
+  "input_image_analysis": {
+    "original_style": "",
+    "dominant_colors": [],
+  },
+  "expansion_settings": {
+    "directions": [],
+    "expansion_amount": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0,
+      "unit": "pixels"
+    },
+    "new_dimensions": {
+      "width": 0,
+      "height": 0
+    },
+    "mask_blur": 0,
+    "feathering": 0
+  },
+  "seamless_blending": {
+    "style_consistency_keywords": [],
+    "texture_matching": "",
+    "color_harmony": "",
+    "pattern_continuation": ""
+  },
+  "outpainting_scenarios": [
+    {
+      "scenario_id": "",
+      "description": "",
+      "prompt": ""
+    },
+    {
+      "scenario_id": "",
+      "description": "",
+      "prompt": ""
+    },
+    {
+      "scenario_id": "",
+      "description": "",
+      "prompt": ""
+    },
+    {
+      "scenario_id": "",
+      "description": "",
+      "prompt": ""
+    }
+  ],
+  "recommended_settings": {
+    "denoising_strength": 0,
+    "cfg_scale": 0,
+    "steps": 0
+  }
+}
+```
+
+
+{
+  "manga_page": {
+    "page_info": {
+      "page_number": 1,
+      "title": "",
+      "total_frames": 4,
+      "theme": "Introduction to Dong Ho paintings"
+    },
+    
+    "frames": [
+      {
+        "frame_number": 1,
+        "size": "",
+        "scene": "",
+        "characters": [],
+        "dialogue": [],
+        "narration": "",
+        "art_direction": ""
+      },
+      {
+        "frame_number": 2,
+        "size": "",
+        "scene": "",
+        "characters": [],
+        "dialogue": [],
+        "narration": "",
+        "art_direction": ""
+      },
+      {
+        "frame_number": 3,
+        "size": "",
+        "scene": "",
+        "characters": [],
+        "dialogue": [],
+        "narration": "",
+        "art_direction": ""
+      },
+      {
+        "frame_number": 4,
+        "size": "",
+        "scene": "",
+        "characters": [],
+        "dialogue": [],
+        "narration": "",
+        "art_direction": ""
+      }
+    ]
+  }
+}
+
+```json
+Return ONLY valid JSON (no markdown, no extra text).
+I want to use this image to draw a story page inspired by a Vietnamese traditional folk painting. 
+Please fill in the following JSON template with the most detailed information to make it become a meaningful story:
+
+{
+  "task_type": "StoryGeneration",
+  "source_material": {
+    "painting_style": "dong_ho|hang_trong|kim_hoang|sinh_village|other",
+    "painting_title": "",
+    "painting_era": "",
+    "cultural_context": "",
+    "symbolic_elements": []
+  },
+  "story_metadata": {
+    "story_title": "",
+    "narrative_type": "educational|folklore|historical|symbolic_interpretation",
+    "target_audience": "children|young_adult|adult|all_ages",
+    "tone": "whimsical|serious|mysterious|celebratory",
+    "reading_direction": "right_to_left|left_to_right"
+  },
+  "visual_analysis": {
+    "original_style": {
+      "technique": "woodblock|lacquer|watercolor|mixed",
+      "line_quality": "bold|delicate|rustic|refined",
+      "color_palette": "traditional|vibrant|muted|monochrome"
+    },
+    "dominant_colors": [
+      {
+        "color": "",
+        "hex": "",
+        "symbolic_meaning": "",
+        "usage_percentage": 0
+      }
+    ],
+    "composition_elements": {
+      "focal_points": [],
+      "balance": "symmetrical|asymmetrical|radial",
+      "perspective": "flat|hierarchical|isometric"
+    }
+  },
+  "page_layout": {
+    "total_frames": 6,
+    "page_dimensions": {
+      "width": 1654,
+      "height": 2339,
+      "unit": "pixels",
+      "aspect_ratio": "A4|B5|custom"
+    },
+    "gutter_spacing": 20,
+    "margin": {
+      "top": 50,
+      "bottom": 50,
+      "left": 40,
+      "right": 40
+    },
+    "layout_type": "traditional_grid|dynamic|splash_page|mixed"
+  },
+  "characters": [
+    {
+      "character_id": "char_01",
+      "name": "",
+      "role": "protagonist|supporting|narrator|symbolic_figure",
+      "visual_description": {
+        "appearance": "",
+        "traditional_costume": "",
+        "distinctive_features": "",
+        "color_scheme": []
+      },
+      "personality_traits": [],
+      "cultural_significance": ""
+    }
+  ],
+  "story_panels": {
+    "panel_1": {
+      "frame_number": 1,
+      "layout": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "panel_type": "establishing|action|reaction|transition|splash",
+        "border_style": "standard|borderless|decorative|traditional_pattern"
+      },
+      "scene_description": {
+        "setting": "",
+        "time_of_day": "",
+        "atmosphere": "",
+        "key_visual_elements": [],
+        "traditional_motifs": []
+      },
+      "characters_present": ["char_01"],
+      "camera_angle": "wide_shot|close_up|medium_shot|bird_eye|worm_eye",
+      "manga_techniques": {
+        "speed_lines": false,
+        "screen_tones": [],
+        "sound_effects": [],
+        "emotion_symbols": []
+      },
+      "script": [
+        {
+          "type": "narration|dialogue|thought|caption",
+          "character": "char_01|narrator",
+          "text": "",
+          "language": "vietnamese|bilingual",
+          "bubble_style": "speech|thought|narration_box|whisper",
+          "placement": "top_left|top_right|bottom|center",
+          "font_style": "standard|handwritten|traditional"
+        }
+      ],
+      "cultural_notes": "",
+      "transition_to_next": "cut|fade|match_cut|symbolic"
+    },
+    "panel_2": {
+      "frame_number": 2,
+      "layout": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "panel_type": "establishing|action|reaction|transition|splash",
+        "border_style": "standard|borderless|decorative|traditional_pattern"
+      },
+      "scene_description": {
+        "setting": "",
+        "time_of_day": "",
+        "atmosphere": "",
+        "key_visual_elements": [],
+        "traditional_motifs": []
+      },
+      "characters_present": [],
+      "camera_angle": "wide_shot|close_up|medium_shot|bird_eye|worm_eye",
+      "manga_techniques": {
+        "speed_lines": false,
+        "screen_tones": [],
+        "sound_effects": [],
+        "emotion_symbols": []
+      },
+      "script": [],
+      "cultural_notes": "",
+      "transition_to_next": "cut|fade|match_cut|symbolic"
+    },
+    "panel_3": {
+      "frame_number": 3,
+      "layout": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "panel_type": "establishing|action|reaction|transition|splash",
+        "border_style": "standard|borderless|decorative|traditional_pattern"
+      },
+      "scene_description": {
+        "setting": "",
+        "time_of_day": "",
+        "atmosphere": "",
+        "key_visual_elements": [],
+        "traditional_motifs": []
+      },
+      "characters_present": [],
+      "camera_angle": "wide_shot|close_up|medium_shot|bird_eye|worm_eye",
+      "manga_techniques": {
+        "speed_lines": false,
+        "screen_tones": [],
+        "sound_effects": [],
+        "emotion_symbols": []
+      },
+      "script": [],
+      "cultural_notes": "",
+      "transition_to_next": "cut|fade|match_cut|symbolic"
+    },
+    "panel_4": {
+      "frame_number": 4,
+      "layout": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "panel_type": "establishing|action|reaction|transition|splash",
+        "border_style": "standard|borderless|decorative|traditional_pattern"
+      },
+      "scene_description": {
+        "setting": "",
+        "time_of_day": "",
+        "atmosphere": "",
+        "key_visual_elements": [],
+        "traditional_motifs": []
+      },
+      "characters_present": [],
+      "camera_angle": "wide_shot|close_up|medium_shot|bird_eye|worm_eye",
+      "manga_techniques": {
+        "speed_lines": false,
+        "screen_tones": [],
+        "sound_effects": [],
+        "emotion_symbols": []
+      },
+      "script": [],
+      "cultural_notes": "",
+      "transition_to_next": "end"
+    }
+  },
+  "style_fusion": {
+    "manga_influence": 0.5,
+    "traditional_painting_influence": 0.5,
+    "hybrid_techniques": [],
+    "preservation_priorities": [
+      "traditional_colors",
+      "symbolic_elements",
+      "cultural_motifs"
+    ]
+  },
+  "generation_settings": {
+    "art_style": "manga|manhwa|seinen|shoujo|kodomo",
+    "line_weight": "thin|medium|bold|varied",
+    "shading_style": "cell_shading|gradient|traditional_hatching|screen_tone",
+    "detail_level": "minimal|moderate|high|ultra_detailed",
+    "denoising_strength": 0.7,
+    "cfg_scale": 7.5,
+    "steps": 30,
+    "seed": -1
+  },
+  "educational_content": {
+    "learning_objectives": [],
+    "cultural_explanations": [],
+    "glossary": [
+      {
+        "term": "",
+        "definition": "",
+        "cultural_context": ""
+      }
+    ]
+  },
+  "accessibility": {
+    "alt_text_descriptions": [],
+    "color_blind_considerations": true,
+    "text_size": "standard|large",
+    "audio_description_notes": []
+  }
+}
+
+
+{
+  "task_type": "StoryGeneration",
+  "source_material": {
+    "painting_style": "dong_ho",
+    "painting_title": "Chim Lồng (Caged Bird)",
+    "painting_era": "Traditional Đông Hồ folk art, 16th-17th century Vietnamese woodblock tradition",
+    "cultural_context": "This painting depicts three children engaging in traditional bird-related activities in rural Vietnamese village life. It represents the harmonious relationship between children and nature while carrying deeper philosophical meanings about freedom, captivity, and responsibility of care.",
+    "symbolic_elements": [
+      "Ornate yellow birdcage with black vertical stripes - traditional craftsmanship and paradox of beautiful captivity",
+      "Three children in different poses - community, friendship, different aspects of nature interaction",
+      "Golden/yellow birds - beauty, preciousness, value of freedom",
+      "Flowering branches with blossoms - spring, natural beauty, wild habitat",
+      "Traditional Vietnamese costumes - cultural heritage connection",
+      "Conical hat (nón lá) on right child - iconic Vietnamese rural culture symbol",
+      "Ground with plants - earth and rural life grounding"
+    ]
+  },
+  "story_metadata": {
+    "story_title": "Ba Đứa Trẻ và Bài Học Của Chim Vàng / The Three Children and the Golden Bird's Lesson",
+    "narrative_type": "folklore",
+    "target_audience": "all_ages",
+    "tone": "whimsical",
+    "reading_direction": "left_to_right"
+  },
+  "visual_analysis": {
+    "original_style": {
+      "technique": "woodblock",
+      "line_quality": "bold",
+      "color_palette": "traditional"
+    },
+    "dominant_colors": [
+      {
+        "color": "Deep Green",
+        "hex": "#2D5F3F",
+        "symbolic_meaning": "Nature, life, harmony with environment",
+        "usage_percentage": 28
+      },
+      {
+        "color": "Rich Maroon/Brown",
+        "hex": "#6B3428",
+        "symbolic_meaning": "Earth, stability, traditional values",
+        "usage_percentage": 24
+      },
+      {
+        "color": "Golden Yellow",
+        "hex": "#D4A443",
+        "symbolic_meaning": "Joy, childhood innocence, prosperity, precious birds",
+        "usage_percentage": 22
+      },
+      {
+        "color": "Black",
+        "hex": "#000000",
+        "symbolic_meaning": "Definition, structure, woodblock outlines",
+        "usage_percentage": 16
+      },
+      {
+        "color": "Natural Paper Beige",
+        "hex": "#E8DCC8",
+        "symbolic_meaning": "Traditional paper base, authenticity, simplicity",
+        "usage_percentage": 10
+      }
+    ],
+    "composition_elements": {
+      "focal_points": [
+        "Central ornate yellow birdcage with black vertical stripes",
+        "Three children in triangular composition",
+        "Flowering branches creating overhead canopy",
+        "Left child holding bird in hands",
+        "Right child reaching toward branches"
+      ],
+      "balance": "symmetrical",
+      "perspective": "flat"
+    }
+  },
+  "page_layout": {
+    "total_frames": 6,
+    "page_dimensions": {
+      "width": 1654,
+      "height": 2339,
+      "unit": "pixels",
+      "aspect_ratio": "A4"
+    },
+    "gutter_spacing": 20,
+    "margin": {
+      "top": 50,
+      "bottom": 50,
+      "left": 40,
+      "right": 40
+    },
+    "layout_type": "mixed"
+  },
+  "art_style_preservation": {
+    "original_painting_reference": "/mnt/user-data/uploads/dongho_0038_chim-long.jpg",
+    "character_design_rule": "STRICT - All characters MUST maintain exact visual appearance from original painting",
+    "visual_consistency_requirements": {
+      "character_appearance": "Keep 100% identical - round faces with simple closed-eye smiles, stocky child proportions, same hairstyles",
+      "costume_design": "Preserve exact layers: green outer garments, maroon/brown inner vests, yellow trim and accents, traditional patterns",
+      "color_palette": "Use ONLY deep green #2D5F3F, maroon #6B3428, golden yellow #D4A443, black #000000, natural beige #E8DCC8",
+      "line_style": "Maintain bold black woodblock outlines, approximately 3-4px weight, clean edges",
+      "facial_features": "Keep simple folk-art style - closed eyes as curved lines, small mouths, round faces, no detailed modern features",
+      "body_proportions": "Preserve stocky folk art proportions - short limbs, rounded torsos, simplified anatomy",
+      "composition_style": "Flat perspective, no depth, symmetrical balance, all elements on same plane"
+    },
+    "what_can_change": [
+      "Panel layout and frame arrangement on page",
+      "Camera framing - closer or wider shots of same characters",
+      "Background environmental details - village, sky, ground textures",
+      "Speech bubbles and Vietnamese text placement",
+      "Story sequence across 6 panels",
+      "Motion lines using traditional colors only (green, maroon, yellow)"
+    ],
+    "what_cannot_change": [
+      "Children's round faces with closed-eye smiles",
+      "Stocky, simplified body proportions",
+      "Green and maroon layered costume design",
+      "Yellow conical hat on right child",
+      "Bold black woodblock outlines",
+      "Traditional Đông Hồ color palette",
+      "Simple folk art facial features",
+      "Flat perspective and composition style"
+    ]
+  },
+  "characters": [
+    {
+      "character_id": "char_01",
+      "name": "Minh (Left Child)",
+      "role": "protagonist",
+      "original_painting_appearance": {
+        "exact_description": "Standing child on left side, round gentle face with eyes closed in peaceful expression, traditional short black hair",
+        "position_in_original": "left",
+        "facial_features": "Simple folk art - closed eyes as curved lines, small gentle smile, round cheeks, no detailed features",
+        "body_type": "Stocky folk art proportions - short arms and legs, rounded torso, simplified anatomy",
+        "pose_in_original": "Standing upright, both hands cupped at chest level gently holding small golden bird, protective careful posture",
+        "costume_details": "Deep green outer garment with long sleeves, maroon/brown inner vest visible at chest, yellow trim on collar and edges, traditional layered Vietnamese children's outfit",
+        "color_scheme": ["deep green #2D5F3F", "maroon brown #6B3428", "golden yellow #D4A443", "black outlines"]
+      },
+      "personality_traits": ["gentle", "caring", "thoughtful", "protective", "empathetic"],
+      "cultural_significance": "Represents Vietnamese value of gentleness and careful stewardship of nature",
+      "usage_in_story": "Appears in panels 1, 3, 4, 6 - always with same round face, closed-eye smile, green-maroon costume, holding or near birds"
+    },
+    {
+      "character_id": "char_02",
+      "name": "Lan (Center Child)",
+      "role": "protagonist",
+      "original_painting_appearance": {
+        "exact_description": "Child kneeling/crouching in center, round face with gentle smile, traditional hairstyle with side part",
+        "position_in_original": "center",
+        "facial_features": "Simple folk art - closed eyes as curved lines, small gentle smile, round face, simplified features",
+        "body_type": "Stocky folk art proportions - short limbs, rounded form, simplified anatomy",
+        "pose_in_original": "Kneeling/crouching position, hands near ground level beside ornate yellow-and-black birdcage, tending posture",
+        "costume_details": "Green outer garment, maroon/brown inner layer visible, traditional Vietnamese children's outfit with simplified patterns",
+        "color_scheme": ["green #2D5F3F", "maroon #6B3428", "yellow accents", "black outlines"]
+      },
+      "personality_traits": ["observant", "responsible", "nurturing", "thoughtful", "grounded"],
+      "cultural_significance": "Embodies caretaker role and responsibility valued in Vietnamese culture",
+      "usage_in_story": "Appears in panels 2, 4, 5, 6 - always with same kneeling posture near birdcage, same round face and costume"
+    },
+    {
+      "character_id": "char_03",
+      "name": "Tuấn (Right Child)",
+      "role": "protagonist",
+      "original_painting_appearance": {
+        "exact_description": "Active child on right wearing distinctive yellow conical hat (nón lá), round cheerful face with closed eyes",
+        "position_in_original": "right",
+        "facial_features": "Simple folk art - closed eyes as curved lines showing joy, small smiling mouth, round cheeks",
+        "body_type": "Stocky folk art proportions - short limbs, rounded torso, simplified child anatomy",
+        "pose_in_original": "Dynamic standing pose, right arm reaching upward toward flowering branches, left arm at side, active energetic posture",
+        "costume_details": "Yellow/golden conical hat (nón lá), green vest over maroon/brown shirt, distinctive yellow/golden shorts, traditional rural attire",
+        "color_scheme": ["golden yellow hat #D4A443", "green vest #2D5F3F", "maroon brown #6B3428", "yellow shorts", "black outlines"]
+      },
+      "personality_traits": ["energetic", "adventurous", "playful", "skillful", "optimistic"],
+      "cultural_significance": "Represents active engagement with nature in traditional Vietnamese rural childhood",
+      "usage_in_story": "Appears in panels 2, 4, 6 - always wearing yellow conical hat, same round face, green-maroon costume with yellow shorts"
+    },
+    {
+      "character_id": "char_04",
+      "name": "The Golden Birds",
+      "role": "symbolic_figure",
+      "original_painting_appearance": {
+        "exact_description": "Small songbirds in golden yellow and brown tones, simple folk art design with minimal detail",
+        "position_in_original": "Multiple locations - held by left child, inside cage, on flowering branches",
+        "facial_features": "Simple dots for eyes, small beaks, folk art simplification",
+        "body_type": "Small rounded bird forms, simplified anatomy typical of Đông Hồ style",
+        "pose_in_original": "Various - perched, held, caged - always small and delicate in appearance",
+        "costume_details": "Natural plumage rendered in golden yellow with brown accents",
+        "color_scheme": ["golden yellow #D4A443", "brown accents", "black outline details"]
+      },
+      "personality_traits": ["free-spirited", "beautiful", "precious", "vulnerable"],
+      "cultural_significance": "Symbolize beauty of nature, freedom versus captivity, soul and liberation in Vietnamese culture",
+      "usage_in_story": "Appear in all panels - maintain simple folk art bird design, golden color, same size proportions"
+    },
+    {
+      "character_id": "char_05",
+      "name": "Village Elder Narrator",
+      "role": "narrator",
+      "original_painting_appearance": {
+        "exact_description": "Invisible narrative presence, voice only",
+        "position_in_original": "not visible",
+        "facial_features": "N/A",
+        "body_type": "N/A",
+        "pose_in_original": "N/A",
+        "costume_details": "N/A",
+        "color_scheme": []
+      },
+      "personality_traits": ["wise", "gentle", "teaching", "patient", "compassionate"],
+      "cultural_significance": "Represents oral tradition of Vietnamese folk wisdom transmission",
+      "usage_in_story": "Provides narration boxes in traditional Vietnamese storytelling style throughout all panels"
+    }
+  ],
+  "story_panels": {
+    "panel_1": {
+      "frame_number": 1,
+      "layout": {
+        "position": {
+          "x": 40,
+          "y": 50,
+          "width": 1574,
+          "height": 360
+        },
+        "panel_type": "establishing",
+        "border_style": "decorative"
+      },
+      "visual_reference": {
+        "base_on_original": "Wide village scene, no characters yet, setting only",
+        "camera_angle": "wide_shot",
+        "character_poses": "N/A - establishing shot",
+        "preserve_from_original": ["Traditional Vietnamese village architecture", "Flowering trees", "Natural beige background color", "Flat perspective style"]
+      },
+      "scene_description": {
+        "setting": "Traditional Vietnamese village in spring with flowering trees",
+        "time_of_day": "Early morning",
+        "atmosphere": "Serene, nostalgic, peaceful",
+        "key_visual_elements": ["Traditional houses with tiled roofs", "Flowering trees in bloom", "Clear sky", "Rural landscape"],
+        "traditional_motifs": ["Đông Hồ woodblock aesthetic", "Spring blossoms", "Village architecture", "Natural beige paper background"]
+      },
+      "characters_present": ["char_05"],
+      "manga_techniques": {
+        "speed_lines": false,
+        "screen_tones": ["peaceful morning atmosphere using natural beige", "spring light effects in yellow"],
+        "sound_effects": ["TIẾNG CHIM (bird songs)", "GIÓ NHẸ (gentle breeze)"],
+        "emotion_symbols": ["peaceful aura - no modern manga symbols, use traditional motifs only"]
+      },
+      "script": [
+        {
+          "type": "narration",
+          "character": "narrator",
+          "text": "Ngày xưa, ở một làng quê yên bình, có ba đứa trẻ là bạn thân...",
+          "language": "vietnamese",
+          "bubble_style": "narration_box",
+          "placement": "top_center",
+          "font_style": "traditional"
+        },
+        {
+          "type": "narration",
+          "character": "narrator",
+          "text": "Long ago in a peaceful village, there were three children who were best friends...",
+          "language": "bilingual",
+          "bubble_style": "narration_box",
+          "placement": "top_center",
+          "font_style": "standard"
+        }
+      ],
+      "cultural_notes": "Establishes traditional Vietnamese village setting, introduces folk tale framework with spring season significance",
+      "transition_to_next": "fade"
+    },
+    "panel_2": {
+      "frame_number": 2,
+      "layout": {
+        "position": {
+          "x": 40,
+          "y": 430,
+          "width": 767,
+          "height": 520
+        },
+        "panel_type": "action",
+        "border_style": "decorative"
+      },
+      "visual_reference": {
+        "base_on_original": "Right child (char_03) reaching toward flowering branches with birds",
+        "camera_angle": "medium_shot",
+        "character_poses": "EXACT pose from original - char_03 with yellow nón lá, right arm reaching up, same stocky proportions, closed-eye smile",
+        "preserve_from_original": ["Yellow conical hat", "Green vest over maroon shirt", "Yellow shorts", "Bold black outlines", "Stocky folk art body", "Round face with closed eyes", "Flowering branches with pink/yellow blossoms", "Golden birds in branches"]
+      },
+      "scene_description": {
+        "setting": "Among flowering branches, outdoor",
+        "time_of_day": "Morning",
+        "atmosphere": "Exciting, adventurous, energetic",
+        "key_visual_elements": ["Tuấn with yellow nón lá reaching upward", "Flowering branches", "Golden birds", "Traditional costume details"],
+        "traditional_motifs": ["Nón lá as cultural icon", "Flowering branches typical of Đông Hồ", "Dynamic folk art pose", "Bold black outlines"]
+      },
+      "characters_present": ["char_03", "char_04"],
+      "manga_techniques": {
+        "speed_lines": true,
+        "screen_tones": ["motion effects in green and yellow only", "excitement atmosphere"],
+        "sound_effects": ["VỖ VỖ (fluttering)", "XÀO XẠO (rustling)"],
+        "emotion_symbols": ["determination - use simple lines in traditional colors, no modern manga symbols"]
+      },
+      "script": [
+        {
+          "type": "dialogue",
+          "character": "char_03",
+          "text": "Nhìn kìa! Chim vàng đẹp làm sao!",
+          "language": "vietnamese",
+          "bubble_style": "speech",
+          "placement": "top_right",
+          "font_style": "standard"
+        },
+        {
+          "type": "dialogue",
+          "character": "char_03",
+          "text": "Look! Such beautiful golden birds!",
+          "language": "bilingual",
+          "bubble_style": "speech",
+          "placement": "top_right",
+          "font_style": "standard"
+        }
+      ],
+      "cultural_notes": "Traditional Vietnamese childhood bird-watching activity, nón lá represents rural heritage",
+      "transition_to_next": "match_cut"
+    },
+    "panel_3": {
+      "frame_number": 3,
+      "layout": {
+        "position": {
+          "x": 827,
+          "y": 430,
+          "width": 767,
+          "height": 520
+        },
+        "panel_type": "reaction",
+        "border_style": "decorative"
+      },
+      "visual_reference": {
+        "base_on_original": "Left child (char_01) holding bird gently in hands",
+        "camera_angle": "close_up",
+        "character_poses": "EXACT pose from original - char_01 standing, hands cupped at chest holding bird, same green-maroon costume, closed-eye peaceful smile, stocky proportions",
+        "preserve_from_original": ["Round gentle face with closed eyes", "Green outer garment with maroon vest", "Yellow collar trim", "Both hands cupped protectively", "Stocky folk art body proportions", "Bold black outlines", "Golden bird in hands", "Simple folk art features"]
+      },
+      "scene_description": {
+        "setting": "Ground level, intimate focus on Minh and bird",
+        "time_of_day": "Morning",
+        "atmosphere": "Gentle, tender, peaceful",
+        "key_visual_elements": ["Minh's peaceful expression", "Golden bird in cupped hands", "Traditional costume details", "Soft focus effect"],
+        "traditional_motifs": ["Gentle human-nature interaction", "Traditional costume patterns", "Folk art facial simplicity", "Caring gesture"]
+      },
+      "characters_present": ["char_01", "char_04"],
+      "manga_techniques": {
+        "speed_lines": false,
+        "screen_tones": ["soft glow in yellow", "gentle atmosphere in natural beige", "warmth effects"],
+        "sound_effects": ["CHIP CHIP (soft chirping)", "YÊN ẢI (peaceful)"],
+        "emotion_symbols": ["gentle sparkles in yellow - simple folk art style, no complex manga symbols"]
+      },
+      "script": [
+        {
+          "type": "dialogue",
+          "character": "char_01",
+          "text": "Em nhỏ bé và mềm mại làm sao...",
+          "language": "vietnamese",
+          "bubble_style": "speech",
+          "placement": "top_center",
+          "font_style": "standard"
+        },
+        {
+          "type": "thought",
+          "character": "char_01",
+          "text": "Trái tim em đập nhanh quá...",
+          "language": "vietnamese",
+          "bubble_style": "thought",
+          "placement": "bottom_right",
+          "font_style": "handwritten"
+        }
+      ],
+      "cultural_notes": "Vietnamese values of gentleness and respect for living beings, Buddhist-Confucian compassion",
+      "transition_to_next": "symbolic"
+    },
+    "panel_4": {
+      "frame_number": 4,
+      "layout": {
+        "position": {
+          "x": 40,
+          "y": 970,
+          "width": 1574,
+          "height": 580
+        },
+        "panel_type": "splash",
+        "border_style": "traditional_pattern"
+      },
+      "visual_reference": {
+        "base_on_original": "COMPLETE original painting - all three children with birdcage and flowering branches",
+        "camera_angle": "wide_shot",
+        "character_poses": "EXACTLY as in original painting - char_01 left standing with bird, char_02 center kneeling by cage, char_03 right reaching toward branches, ALL with same faces, costumes, proportions",
+        "preserve_from_original": ["ALL three children exact positions", "Yellow birdcage with black vertical stripes center", "Flowering branches overhead", "All costume details - green, maroon, yellow colors", "Stocky folk art proportions all characters", "Bold black outlines throughout", "Flat perspective", "Symmetrical triangular composition", "Natural beige background", "Golden birds in multiple positions", "Simple closed-eye facial features all characters"]
+      },
+      "scene_description": {
+        "setting": "Complete scene with all three children and ornate birdcage",
+        "time_of_day": "Mid-morning",
+        "atmosphere": "Harmonious, balanced, contemplative",
+        "key_visual_elements": ["All three children in original poses", "Yellow birdcage with black stripes center", "Flowering branches creating canopy", "Multiple birds - held, caged, in branches", "Traditional Vietnamese color harmony", "Ground with small plants"],
+        "traditional_motifs": ["Complete Đông Hồ composition", "Bold black outlines defining all forms", "Flat perspective", "Symmetrical balance", "Traditional birdcage craftsmanship", "Folk art aesthetic maintained"]
+      },
+      "characters_present": ["char_01", "char_02", "char_03", "char_04"],
+      "manga_techniques": {
+        "speed_lines": false,
+        "screen_tones": ["traditional woodblock texture", "harmonious atmosphere", "balanced composition using only traditional colors"],
+        "sound_effects": ["CHIP CHIP (birds chirping)", "YÊN BÌNH (peaceful)"],
+        "emotion_symbols": ["harmony aura - simple traditional motifs only, no modern manga symbols"]
+      },
+      "script": [
+        {
+          "type": "dialogue",
+          "character": "char_02",
+          "text": "Chúng mình làm lồng đẹp cho chim...",
+          "language": "vietnamese",
+          "bubble_style": "speech",
+          "placement": "center_left",
+          "font_style": "standard"
+        },
+        {
+          "type": "dialogue",
+          "character": "char_01",
+          "text": "Nhưng sao chim cứ nhìn ra ngoài?",
+          "language": "vietnamese",
+          "bubble_style": "speech",
+          "placement": "bottom_left",
+          "font_style": "standard"
+        }
+      ],
+      "cultural_notes": "Recreates complete traditional painting while introducing moral tension about freedom versus captivity",
+      "transition_to_next": "fade"
+    },
+    "panel_5": {
+      "frame_number": 5,
+      "layout": {
+        "position": {
+          "x": 40,
+          "y": 1570,
+          "width": 767,
+          "height": 520
+        },
+        "panel_type": "reaction",
+        "border_style": "decorative"
+      },
+      "visual_reference": {
+        "base_on_original": "Center child (char_02) observing birdcage closely",
+        "camera_angle": "close_up",
+        "character_poses": "EXACT from original - char_02 kneeling position beside cage, same round face with closed-eye smile, green-maroon costume, stocky folk art proportions",
+        "preserve_from_original": ["Round face with simple closed-eye features", "Kneeling posture", "Green and maroon costume layers", "Stocky simplified body", "Bold black outlines", "Yellow birdcage with black vertical stripes", "Golden bird inside looking outward", "Folk art facial simplicity"]
+      },
+      "scene_description": {
+        "setting": "Close focus on birdcage and Lan observing",
+        "time_of_day": "Late morning",
+        "atmosphere": "Contemplative, realization, emotional",
+        "key_visual_elements": ["Ornate birdcage with vertical stripes", "Bird inside looking outward", "Lan's thoughtful observation", "Contrast between cage and freedom visible"],
+        "traditional_motifs": ["Cage as philosophical symbol", "Folk art teaching through visual storytelling", "Traditional craftsmanship details", "Simple emotional expression through posture"]
+      },
+      "characters_present": ["char_02", "char_04"],
+      "manga_techniques": {
+        "speed_lines": false,
+        "screen_tones": ["realization atmosphere in traditional colors", "contemplative mood", "empathy effects in yellow glow"],
+        "sound_effects": ["CHIP... (sad chirping)", "IM LẶNG (silence)", "THẤU HIỂU (understanding)"],
+        "emotion_symbols": ["realization - use simple traditional motifs, small sparkles in yellow, no modern manga flash effects"]
+      },
+      "script": [
+        {
+          "type": "thought",
+          "character": "char_02",
+          "text": "Em được chăm sóc... nhưng không vui...",
+          "language": "vietnamese",
+          "bubble_style": "thought",
+          "placement": "top_center",
+          "font_style": "handwritten"
+        },
+        {
+          "type": "dialogue",
+          "character": "char_02",
+          "text": "Dù lồng có đẹp, nó cũng chỉ là lồng!",
+          "language": "vietnamese",
+          "bubble_style": "speech",
+          "placement": "center_right",
+          "font_style": "standard"
+        }
+      ],
+      "cultural_notes": "Buddhist teachings on suffering and freedom, Vietnamese folk wisdom about true care meaning understanding needs",
+      "transition_to_next": "symbolic"
+    },
+    "panel_6": {
+      "frame_number": 6,
+      "layout": {
+        "position": {
+          "x": 827,
+          "y": 1570,
+          "width": 767,
+          "height": 719
+        },
+        "panel_type": "splash",
+        "border_style": "traditional_pattern"
+      },
+      "visual_reference": {
+        "base_on_original": "All three children watching birds fly free, maintaining original character designs",
+        "camera_angle": "wide_shot",
+        "character_poses": "All three children in watching poses - MUST maintain exact same faces, stocky proportions, costume colors, closed-eye folk art features from original",
+        "preserve_from_original": ["All three children with same round faces, closed eyes, folk art features", "Same green-maroon-yellow costume colors", "Yellow nón lá on char_03", "Stocky folk art body proportions all characters", "Bold black outlines", "Golden birds in flight - simple folk art bird design", "Flowering branches", "Open birdcage in traditional colors", "Flat perspective maintained", "Traditional Đông Hồ color palette only"]
+      },
+      "scene_description": {
+        "setting": "Open sky with flowering branches, moment of liberation",
+        "time_of_day": "Bright noon",
+        "atmosphere": "Liberating, joyful yet bittersweet, wise",
+        "key_visual_elements": ["Golden birds flying free into sky", "Three children watching with joy", "Open birdcage with door ajar", "Flowering branches framing freedom", "Bright sky", "Traditional colors maintained"],
+        "traditional_motifs": ["Liberation and freedom motif", "Buddhist compassion symbolism", "Vietnamese folk wisdom", "Spring renewal", "Harmony between humans and nature"]
+      },
+      "characters_present": ["char_01", "char_02", "char_03", "char_04", "char_05"],
+      "manga_techniques": {
+        "speed_lines": true,
+        "screen_tones": ["freedom effects using green and yellow", "joy atmosphere in traditional colors", "liberation glow in golden yellow"],
+        "sound_effects": ["BÁT! (taking flight)", "VỖ VỖ VỖ! (wings)", "CHIP CHIP! (joyful singing)", "TỰ DO! (freedom!)"],
+        "emotion_symbols": ["freedom trails in yellow - simple folk art style", "joy sparkles - traditional motifs only, no modern manga tears or symbols"]
+      },
+      "script": [
+        {
+          "type": "dialogue",
+          "character": "char_01",
+          "text": "Bay đi các em... Bầu trời là nhà thật của em!",
+          "language": "vietnamese",
+          "bubble_style": "speech",
+          "placement": "center_left",
+          "font_style": "standard"
+        },
+        {
+          "type": "dialogue",
+          "character": "char_03",
+          "text": "Hát lên đi! Hát bài ca tự do!",
+          "language": "vietnamese",
+          "bubble_style": "speech",
+          "placement": "top_right",
+          "font_style": "standard"
+        },
+        {
+          "type": "narration",
+          "character": "narrator",
+          "text": "Ba đứa trẻ học được: Yêu thương đích thực là cho đi tự do.",
+          "language": "vietnamese",
+          "bubble_style": "narration_box",
+          "placement": "bottom_center",
+          "font_style": "traditional"
+        },
+        {
+          "type": "narration",
+          "character": "narrator",
+          "text": "The three friends learned: True love is giving freedom.",
+          "language": "bilingual",
+          "bubble_style": "narration_box",
+          "placement": "bottom_center",
+          "font_style": "standard"
+        }]
+      },
+      "cultural_notes": "Final moral lesson reflecting Vietnamese Buddhist non-attachment and Confucian benevolence - genuine love means respecting nature and freedom",
+      "transition_to_next": "end"
+    }
+  },
+  "style_fusion": {
+    "manga_influence": 0.3,
+    "traditional_painting_influence": 0.7,
+    "hybrid_techniques": [
+      "Manga panel sequencing ONLY - character designs remain 100% traditional Đông Hồ",
+      "Speech bubbles integrated carefully to not obscure folk art aesthetic",
+      "Sequential storytelling across panels while preserving exact original character appearance",
+      "Motion effects ONLY using traditional colors - green, maroon, yellow, black",
+      "Camera angles varied for panels but characters always maintain folk art design",
+      "Simple emotion indicators using traditional motifs - no modern manga symbols"
+    ],
+    "preservation_priorities": [
+      "CRITICAL: All three children MUST keep exact same round faces with closed-eye smiles from original",
+      "CRITICAL: Stocky folk art body proportions maintained for all characters in all panels",
+      "CRITICAL: Traditional costume colors exact - deep green, maroon brown, golden yellow only",
+      "CRITICAL: Bold black woodblock outlines 3-4px maintained throughout",
+      "CRITICAL: Simple folk art facial features - closed eyes as curves, small mouths, no detail",
+      "CRITICAL: Yellow nón lá on right child maintained whenever char_03 appears",
+      "CRITICAL: Traditional Đông Hồ color palette only - no modern colors added",
+      "CRITICAL: Flat perspective maintained - no modern depth or shading techniques",
+      "traditional_birdcage_design_exact",
+      "cultural_authenticity_absolute_priority"
+    ]
+  },
+  "generation_settings": {
+    "art_style": "traditional_vietnamese_woodblock_with_manga_panels",
+    "line_weight": "bold",
+    "shading_style": "cell_shading",
+    "detail_level": "high",
+    "denoising_strength": 0.65,
+    "cfg_scale": 7.5,
+    "steps": 35,
+    "seed": -1,
+    "reference_image_weight": 0.85,
+    "style_preservation": "maximum"
+  },
+  "educational_content": {
+    "learning_objectives": [
+      "Understand cultural significance of Đông Hồ folk paintings",
+      "Learn about traditional Vietnamese childhood activities",
+      "Recognize moral lessons in Vietnamese folk art",
+      "Appreciate symbolism of freedom versus captivity in Vietnamese philosophy",
+      "Understand values of compassion and non-attachment",
+      "Learn about traditional crafts like birdcage making",
+      "Recognize importance of oral storytelling tradition"
+    ],
+    "cultural_explanations": [
+      "Bird catching was traditional Vietnamese village childhood activity teaching patience",
+      "Birdcage represents Vietnamese craftsmanship and philosophical questions of freedom",
+      "Moral reflects Buddhist compassion - true love means not possessing",
+      "Flowering branches symbolize spring renewal and natural beauty",
+      "Traditional children's clothing reflected family status and cultural traditions",
+      "Nón lá is iconic Vietnamese symbol of rural culture and practical wisdom",
+      "Đông Hồ paintings contained moral lessons disguised as everyday scenes"
+    ],
+    "glossary": [
+      {
+        "term": "Chim Lồng",
+        "definition": "Caged bird - refers to bird keeping practice and folk painting theme",
+        "cultural_context": "Popular Đông Hồ painting exploring freedom versus captivity, reflecting Vietnamese compassion values"
+      },
+      {
+        "term": "Nón lá",
+        "definition": "Traditional Vietnamese conical hat made from palm leaves",
+        "cultural_context": "Iconic symbol of Vietnamese rural life, providing sun and rain protection"
+      },
+      {
+        "term": "Đông Hồ",
+        "definition": "Traditional Vietnamese folk woodblock painting style from Đông Hồ village",
+        "cultural_context": "Characterized by bold lines, natural colors, flat perspective, moral lessons in everyday scenes"
+      },
+      {
+        "term": "Buông tay",
+        "definition": "To let go or release - Vietnamese Buddhist concept of non-attachment",
+        "cultural_context": "True love and compassion sometimes require releasing control and allowing freedom"
+      }
+    ]
+  },
+  "accessibility": {
+    "alt_text_descriptions": [
+      "Panel 1: Wide shot of traditional Vietnamese village in spring with flowering trees and houses",
+      "Panel 2: Child in yellow conical hat reaching toward flowering branches to catch golden birds, folk art style",
+      "Panel 3: Close-up of child with peaceful closed-eye smile gently holding golden bird in cupped hands, traditional costume",
+      "Panel 4: Complete scene with three stocky folk-art children around ornate yellow-and-black birdcage, flowering branches overhead, flat perspective",
+      "Panel 5: Child kneeling beside birdcage observing caged bird with contemplative expression, folk art style",
+      "Panel 6: Golden birds flying free while three folk-art children watch with joy, open cage below, flowering branches framing scene"
+    ],
+    "color_blind_considerations": true,
+    "text_size": "standard",
+    "audio_description_notes": [
+      "Emphasize gentle teaching tone of narrator",
+      "Convey children's emotional journey from joy to wisdom",
+      "Describe contrast between ornate cage and freedom",
+      "Note joyful yet bittersweet bird songs when freed",
+      "Highlight traditional Vietnamese sounds - leaves, bird calls, village atmosphere",
+      "Emphasize wisdom and compassion in moral lesson",
+      "Convey Đông Hồ aesthetic - bold lines, flat composition, harmonious colors",
+      "Express philosophical depth about freedom and love"
+    ]
+  }
+}

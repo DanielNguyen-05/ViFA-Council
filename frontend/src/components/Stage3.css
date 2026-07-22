@@ -1,0 +1,80 @@
+.stage3 {
+  background: #f0fff0;
+  border-color: #c8e6c8;
+}
+
+.final-response {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #c8e6c8;
+}
+
+.chairman-label {
+  color: #2d8a2d;
+  font-size: 12px;
+  font-family: monospace;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.final-text {
+  color: #333;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.selection-meta {
+  margin-bottom: 12px;
+  color: #4f6f4f;
+  font-size: 12px;
+}
+
+.chairman-evaluation {
+  margin-top: 18px;
+  border-top: 1px solid #dcebdc;
+  padding-top: 12px;
+  color: #3f5f3f;
+}
+
+.chairman-evaluation summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.generated-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.generated-image {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #c8e6c8;
+  border-radius: 8px;
+  background: #f7fff7;
+}
+
+.generated-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.generated-image figcaption {
+  padding: 9px 12px;
+  color: #4f6f4f;
+  font-size: 12px;
+}
+
+.synthesis-error {
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px solid #e9b7b7;
+  border-radius: 6px;
+  background: #fff6f6;
+  color: #9b2c2c;
+  font-size: 13px;
+}
