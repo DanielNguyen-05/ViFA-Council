@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ViFA-Council: Multi-Agent LLM Deliberation for Vietnamese Folk Art Generation</title>
+<meta name="description" content="ViFA-Council is a three-stage multi-agent LLM framework for outpainting and educational story generation from traditional Vietnamese folk paintings.">
+<meta name="keywords" content="ViFA-Council, multi-agent LLM, outpainting, story generation, cultural heritage, Vietnamese folk painting, Đông Hồ">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ViFA-Council: Multi-Agent LLM Deliberation for Vietnamese Folk Art Generation">
+<meta property="og:description" content="ViFA-Council is a three-stage multi-agent LLM framework for outpainting and educational story generation from traditional Vietnamese folk paintings.">
+<meta property="og:image" content="static/images/outpainting_comparison.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23a4392b'/%3E%3Cpath d='M8 9l8 15 8-15' fill='none' stroke='%23fbfcfa' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top"><span class="seal" aria-hidden="true"></span>ViFA-Council</a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#abstract">Abstract</a>
+      <a href="#method">Method</a>
+      <a href="#outpainting">Outpainting</a>
+      <a href="#story">Stories</a>
+      <a href="#user-study">User study</a>
+      <a href="#bibtex">BibTeX</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="venue">MAPR 2026</div>
+    <h1><span>ViFA-Council</span> Multi‑Agent LLM Deliberation for Vietnamese Folk Art Generation</h1>
+
+    <div class="authors">
+      <span>Hai-Dang Nguyen<sup>1,2</sup></span>
+      <span>Minh-Phuong Pham<sup>1,2</sup></span>
+      <span>Thao Thi Phuong Dao<sup>1,2</sup></span>
+      <span>Trong-Le Do<sup>1,2</sup></span>
+      <span>Vinh-Tiep Nguyen<sup>2,3</sup></span>
+      <span>Trung-Nghia Le<sup>1,2,†</sup></span>
+    </div>
+
+    <div class="affils">
+      <span><sup>1</sup>University of Science, Ho Chi Minh City, Vietnam</span>
+      <span><sup>2</sup>Vietnam National University, Ho Chi Minh City, Vietnam</span>
+      <span><sup>3</sup>University of Information Technology, Ho Chi Minh City, Vietnam</span>
+      <span class="note"><sup>†</sup>Corresponding author</span>
+    </div>
+
+    <div class="links">
+      <a class="btn" href="https://arxiv.org/abs/2609.13348" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg>
+        Paper
+      </a>
+      <a class="btn" href="https://arxiv.org/pdf/2609.13348" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 11 5 5 5-5"/><path d="M5 20h14"/></svg>
+        PDF
+      </a>
+      <a class="btn" href="https://github.com/DanielNguyen-05/ViFA-Council" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-4 4 4 4"/><path d="m16 8 4 4-4 4"/><path d="m13.5 5-3 14"/></svg>
+        Code
+      </a>
+      <a class="btn ghost" href="#bibtex">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h4v4c0 3-1.5 5-4 6"/><path d="M14 7h4v4c0 3-1.5 5-4 6"/></svg>
+        BibTeX
+      </a>
+    </div>
+
+    <div class="blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+  </section>
+
+  <div class="wide" style="padding-bottom: clamp(2.5rem, 6vw, 4rem);">
+    <figure>
+      <div class="teaser">
+        <div class="cell">
+          <div class="tag">Source painting</div>
+          <div class="frame"><button class="zoom" type="button"><img src="static/images/source/thay-do-coc.jpg" width="512" height="316" alt="Đông Hồ woodblock print Thầy Đồ Cóc: a toad teacher at a desk with frog pupils around him"></button></div>
+        </div>
+        <div class="cell">
+          <div class="tag out">Outpainting</div>
+          <div class="frame"><button class="zoom" type="button"><img src="static/images/outpainting/thay-do-coc.jpg" width="1800" height="1005" alt="The same print extended on all sides with bamboo, banana plants and fences in the same woodblock style"></button></div>
+        </div>
+        <div class="cell">
+          <div class="tag story">Educational story</div>
+          <div class="frame"><button class="zoom" type="button"><img src="static/images/story/thay-do-coc.jpg" width="2200" height="1200" alt="A four-panel Vietnamese comic about the toad teacher and his pupils, generated from the print"></button></div>
+        </div>
+      </div>
+      <figcaption>ViFA-Council takes one folk painting and a short directive. Three LLMs deliberate over a structured JSON specification, and the selected specification drives image synthesis for outpainting or a multi-panel educational story. Source: <em>Thầy Đồ Cóc</em>, Đông Hồ.</figcaption>
+    </figure>
+  </div>
+
+  <section class="section tint" id="abstract">
+    <div class="wide">
+      <div class="prose">
+        <div class="eyebrow">Abstract</div>
+        <p class="lede">This paper presents ViFA-Council, a three-stage multi-agent framework that employs multiple large language models (LLMs) to tackle two culturally complex generative tasks: image outpainting and educational story generation based on traditional Vietnamese folk paintings.</p>
+        <p>Current single-model generative pipelines frequently struggle with stylistic hallucinations and cultural misrepresentations because they lack mechanisms for cross-model critique. ViFA-Council addresses this challenge by orchestrating collaboration among GPT-4o, Gemini 3.1 Pro, and Claude Sonnet 4.6. It enforces rigorous cultural constraints through structured agent deliberation. This deliberation is mediated by task-specific JSON schemas that effectively bridge natural language discussions with diffusion-based image synthesis using Banana Pro.</p>
+        <p>Experiments and a user study demonstrate that structured multi-agent deliberation is a promising direction for improving cultural fidelity and narrative coherence in culturally sensitive, low-resource artistic domains.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="method">
+    <div class="wide">
+      <div class="prose">
+        <div class="eyebrow">Method</div>
+        <h2>A three-stage Council that drafts, cross-refines and adjudicates</h2>
+        <p>Given a folk painting <em>I</em> and a user directive <em>q</em>, the Council produces one Chairman-selected JSON configuration <em>J*</em>. Every stage reads and writes the same task-specific schema, so cultural and stylistic constraints are tightened before any image is generated.</p>
+      </div>
+
+      <figure>
+        <div class="plate"><button class="zoom" type="button"><img src="static/images/pipeline.png" width="2200" height="816" alt="Pipeline diagram: an input image and task prompt go to GPT-4o, Gemini and Claude; their three JSON drafts are cross-refined into a three by three grid; a Gemini 3.1 Pro Chairman selects one JSON, which Nano Banana Pro renders as an outpainting or a story page"></button></div>
+        <figcaption>The LLM Council architecture. Parallel drafting, then <em>M × N</em> cross-model refinement, then Chairman-based adjudication.</figcaption>
+      </figure>
+
+      <ol class="stages">
+        <li>
+          <h3>Parallel drafting</h3>
+          <p>GPT-4o, Gemini 3.1 Pro and Claude Sonnet 4.6 each fill the schema from the same painting and directive, without seeing one another’s output. Calls run concurrently with exponential-backoff retries.</p>
+          <div class="formula">3 independent drafts</div>
+        </li>
+        <li>
+          <h3>Cross-model refinement</h3>
+          <p>Every agent reviews and improves every draft, whoever wrote it: checking structural validity, improving cultural fidelity, and returning the same schema. A failed call falls back to the original draft, so no candidate is lost.</p>
+          <div class="formula">up to 3 × 3 = 9 refined candidates</div>
+        </li>
+        <li>
+          <h3>Chairman adjudication</h3>
+          <p>A separate Gemini 3.1 Pro instance, isolated from the earlier stages, receives all drafts and refinements under alphabetical labels. It scores structural validity, logical coherence, cultural fidelity and whether refinement helped, then names one winner.</p>
+          <div class="formula">1 selected configuration J*</div>
+        </li>
+      </ol>
+
+      <div class="table-wrap">
+        <table class="schema">
+          <caption>JSON schema fields<small>The schema is the bridge between LLM deliberation and image synthesis.</small></caption>
+          <thead>
+            <tr><th scope="col">Task</th><th scope="col">Field</th><th scope="col">Description</th><th scope="col">Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Outpainting</td><td><code>input_image_analysis</code></td><td>Original style and dominant colors</td><td>Source-aware visual analysis</td></tr>
+            <tr><td>Outpainting</td><td><code>expansion_settings</code></td><td>Direction, pixel amount, and mask blur</td><td>Synthesis spatial control</td></tr>
+            <tr><td>Outpainting</td><td><code>seamless_blending</code></td><td>Style, texture, color, pattern constraints</td><td>Boundary and appearance continuity</td></tr>
+            <tr><td>Outpainting</td><td><code>outpainting_scenarios[]</code></td><td>Expansion proposals with prompts</td><td>Multi-candidate generation</td></tr>
+            <tr><td>Story</td><td><code>source_material</code></td><td>Title, era, cultural context, and symbols</td><td>Cultural grounding</td></tr>
+            <tr><td>Story</td><td><code>art_style_preservation</code></td><td>Character, line, and perspective constraints</td><td>Prevent visual-style drift</td></tr>
+            <tr><td>Story</td><td><code>characters[]</code></td><td>Appearance, style, and cultural significance</td><td>Cross-panel character consistency</td></tr>
+            <tr><td>Story</td><td><code>story_panels[]</code></td><td>Layout, dialogue, motifs, and transitions</td><td>Sequential narrative specification</td></tr>
+            <tr><td>Story</td><td><code>educational_content</code></td><td>Objectives, explanations, and glossary</td><td>Educational adaptation</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tint" id="outpainting">
+    <div class="wide">
+      <div class="prose">
+        <div class="eyebrow">Task 1</div>
+        <h2>Folk-painting outpainting</h2>
+        <p>We compare ViFA-Council against GPT-4o, Gemini 3.1 Pro and Claude Sonnet 4.6, each prompted with the identical Stage 1 instruction but without cross-refinement or Chairman adjudication, and rendered through the same image pipeline. Experiments use a curated collection of 257 paintings: 112 Đông Hồ, 74 Hàng Trống and 71 Kim Hoàng works.</p>
+      </div>
+
+      <figure>
+        <div class="plate"><button class="zoom" type="button"><img src="static/images/outpainting_comparison.jpg" width="2400" height="1214" alt="Four source paintings, each shown beside the ViFA-Council outpainting and the outpaintings from GPT-4o, Gemini 3.1 Pro and Claude Sonnet 4.6"></button></div>
+        <figcaption>Outpainting results. From left: original, ViFA-Council, GPT-4o, Gemini 3.1 Pro, Claude Sonnet 4.6. Select the figure to enlarge it.</figcaption>
+      </figure>
+
+      <ul class="modes">
+        <li>
+          <div class="who">GPT-4o</div>
+          <h3>Typographical content injection</h3>
+          <p>Modern Vietnamese text is written straight onto the canvas, such as “VƯỜN NHÀ BÌNH YÊN” and “BÉ VUI ĐÙA”.</p>
+        </li>
+        <li>
+          <div class="who">Gemini 3.1 Pro</div>
+          <h3>Cultural hallucination</h3>
+          <p>Imperial swirling clouds, ornamental rock gardens and curved-roof pagodas replace naive rural aesthetics with generic East Asian tropes.</p>
+        </li>
+        <li>
+          <div class="who">Claude Sonnet 4.6</div>
+          <h3>Textural and chromatic degradation</h3>
+          <p>Boundaries are structurally plausible, but the earthy palette is flattened and the fibrous texture of <em>giấy điệp</em> paper is lost.</p>
+        </li>
+        <li>
+          <div class="who">Gemini 3.1 Pro, stories</div>
+          <h3>Structural format drift</h3>
+          <p>Comic panels morph into modern educational infographics with rigid typographic headers.</p>
+        </li>
+      </ul>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Outpainting, automated metrics<small>CLIP measures style consistency; LPIPS and DreamSim measure content consistency; JSON Semantic Score rates the specification from 0 to 100.</small></caption>
+          <thead>
+            <tr><th scope="col">Model</th><th scope="col">CLIP ↑</th><th scope="col">LPIPS ↓</th><th scope="col">DreamSim ↓</th><th scope="col">JSON Semantic (%) ↑</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">GPT-4o</th><td>0.8348</td><td>0.7832</td><td>0.5896</td><td>70.10</td></tr>
+            <tr><th scope="row">Claude Sonnet 4.6</th><td>0.8485</td><td>0.7986</td><td>0.6169</td><td>84.30</td></tr>
+            <tr><th scope="row">Gemini 3.1 Pro</th><td>0.8520</td><td>0.7705</td><td>0.6134</td><td>76.70</td></tr>
+            <tr class="ours"><th scope="row">ViFA-Council (ours)</th><td class="best">0.8524</td><td class="best">0.7317</td><td class="best">0.5745</td><td class="best">93.90</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose" style="gap: 0.5rem;">
+        <h3>More outpainting results</h3>
+        <p class="note">Pick a painting to see the source beside the ViFA-Council extension.</p>
+      </div>
+
+      <div class="picker" role="tablist" aria-label="Paintings" data-picker>
+        <button type="button" role="tab" aria-selected="true" data-key="thu-hoach">Thu hoạch</button>
+        <button type="button" role="tab" aria-selected="false" tabindex="-1" data-key="chim-long">Chim lồng</button>
+        <button type="button" role="tab" aria-selected="false" tabindex="-1" data-key="dam-cuoi-chuot">Đám cưới chuột</button>
+        <button type="button" role="tab" aria-selected="false" tabindex="-1" data-key="thay-do-coc">Thầy đồ Cóc</button>
+        <button type="button" role="tab" aria-selected="false" tabindex="-1" data-key="ga-thu-hung">Gà thư hùng</button>
+        <button type="button" role="tab" aria-selected="false" tabindex="-1" data-key="bat-tien">Bát tiên</button>
+      </div>
+
+      <div class="compare" id="op-thu-hoach" role="tabpanel">
+        <div class="cell"><div class="tag">Source · Đông Hồ</div><div class="frame"><button class="zoom" type="button"><img src="static/images/source/thu-hoach.jpg" width="1024" height="768" alt="Đông Hồ print of farmers bringing in the rice harvest in a walled courtyard"></button></div></div>
+        <div class="cell"><div class="tag out">ViFA-Council</div><div class="frame"><button class="zoom" type="button"><img src="static/images/outpainting/thu-hoach.jpg" width="1800" height="1350" alt="The harvest print extended downward with threshing and rice drying on mats"></button></div></div>
+      </div>
+      <div class="compare" id="op-chim-long" role="tabpanel" hidden>
+        <div class="cell"><div class="tag">Source · Đông Hồ</div><div class="frame"><button class="zoom" type="button"><img src="static/images/source/chim-long.jpg" width="1024" height="768" loading="lazy" alt="Đông Hồ print of three children with a birdcage under a flowering branch"></button></div></div>
+        <div class="cell"><div class="tag out">ViFA-Council</div><div class="frame"><button class="zoom" type="button"><img src="static/images/outpainting/chim-long.jpg" width="1264" height="848" loading="lazy" alt="The birdcage print extended to the sides with more blossom, birds and two more children"></button></div></div>
+      </div>
+      <div class="compare" id="op-dam-cuoi-chuot" role="tabpanel" hidden>
+        <div class="cell"><div class="tag">Source · Đông Hồ</div><div class="frame"><button class="zoom" type="button"><img src="static/images/source/dam-cuoi-chuot.jpg" width="1024" height="768" loading="lazy" alt="Đông Hồ print of a wedding procession of mice offering gifts to a cat"></button></div></div>
+        <div class="cell"><div class="tag out">ViFA-Council</div><div class="frame"><button class="zoom" type="button"><img src="static/images/outpainting/dam-cuoi-chuot.jpg" width="1800" height="890" loading="lazy" alt="The mouse wedding print extended to the right with more musicians, a rooster and a thatched hut"></button></div></div>
+      </div>
+      <div class="compare" id="op-thay-do-coc" role="tabpanel" hidden>
+        <div class="cell"><div class="tag">Source · Đông Hồ</div><div class="frame"><button class="zoom" type="button"><img src="static/images/source/thay-do-coc.jpg" width="512" height="316" loading="lazy" alt="Đông Hồ print of a toad teacher and his frog pupils"></button></div></div>
+        <div class="cell"><div class="tag out">ViFA-Council</div><div class="frame"><button class="zoom" type="button"><img src="static/images/outpainting/thay-do-coc.jpg" width="1800" height="1005" loading="lazy" alt="The toad teacher print extended on all sides with bamboo and banana plants"></button></div></div>
+      </div>
+      <div class="compare" id="op-ga-thu-hung" role="tabpanel" hidden>
+        <div class="cell"><div class="tag">Source · Đông Hồ</div><div class="frame"><button class="zoom" type="button"><img src="static/images/source/ga-thu-hung.jpg" width="1024" height="768" loading="lazy" alt="Đông Hồ print of a rooster, a hen and their chicks"></button></div></div>
+        <div class="cell"><div class="tag out">ViFA-Council</div><div class="frame"><button class="zoom" type="button"><img src="static/images/outpainting/ga-thu-hung.jpg" width="1800" height="1350" loading="lazy" alt="The rooster and hen print extended with more chicks, scattered grain and bamboo"></button></div></div>
+      </div>
+      <div class="compare" id="op-bat-tien" role="tabpanel" hidden>
+        <div class="cell"><div class="tag">Source · Hàng Trống</div><div class="frame"><button class="zoom" type="button"><img src="static/images/source/bat-tien.jpg" width="960" height="447" loading="lazy" alt="Hàng Trống painting of the Eight Immortals crossing the sea"></button></div></div>
+        <div class="cell"><div class="tag out">ViFA-Council</div><div class="frame"><button class="zoom" type="button"><img src="static/images/outpainting/bat-tien.jpg" width="1456" height="720" loading="lazy" alt="The Eight Immortals painting extended with a wider sea, shoreline and sky"></button></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="story">
+    <div class="wide">
+      <div class="prose">
+        <div class="eyebrow">Task 2</div>
+        <h2>Educational story generation</h2>
+        <p>The same Council turns a single painting into a multi-panel comic for children: characters stay consistent with the source print, dialogue is written in Vietnamese, and the story carries the painting’s cultural lesson. The baseline is Gemini 3.1 Pro with the Stage 1 instruction alone.</p>
+      </div>
+
+      <figure>
+        <div class="plate"><button class="zoom" type="button"><img src="static/images/story_comparison.jpg" width="2400" height="1456" alt="Three source paintings, each shown beside the ViFA-Council comic page and the Gemini 3.1 Pro page"></button></div>
+        <figcaption>Story generation results. From left: original, ViFA-Council, Gemini 3.1 Pro. ViFA-Council keeps a comic-strip format with speech bubbles; the baseline drifts toward infographic layouts with typographic headers.</figcaption>
+      </figure>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Story generation, automated metrics<small>DINOv2 measures protagonist consistency across panels; PickScore measures text-image alignment.</small></caption>
+          <thead>
+            <tr><th scope="col">Model</th><th scope="col">CLIP ↑</th><th scope="col">DINO ↑</th><th scope="col">PickScore ↑</th><th scope="col">JSON Semantic (%) ↑</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Gemini 3.1 Pro</th><td>0.667</td><td>0.504</td><td>18.573</td><td>87.0</td></tr>
+            <tr class="ours"><th scope="row">ViFA-Council (ours)</th><td class="best">0.703</td><td class="best">0.601</td><td class="best">19.61</td><td class="best">93.0</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="carousel">
+        <div class="controls">
+          <h3>Story pages from ViFA-Council</h3>
+          <div class="arrows">
+            <button type="button" aria-label="Previous story" data-prev><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
+            <button type="button" aria-label="Next story" data-next><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+          </div>
+        </div>
+        <div class="track" data-track tabindex="0" aria-label="Story pages">
+          <div class="slide">
+            <div class="frame"><button class="zoom" type="button"><img src="static/images/story/hai-ba-trung.jpg" width="2200" height="1200" alt="Four-panel comic about the Trưng sisters leading an uprising on elephants"></button></div>
+            <div class="meta"><img src="static/images/source/hai-ba-trung.jpg" width="1024" height="768" alt=""><div>Hai Bà Trưng đánh giặc<span>Source: Đông Hồ print</span></div></div>
+          </div>
+          <div class="slide">
+            <div class="frame"><button class="zoom" type="button"><img src="static/images/story/thay-do-coc.jpg" width="2200" height="1200" loading="lazy" alt="Four-panel comic about a toad teacher and his pupils on the first day of class"></button></div>
+            <div class="meta"><img src="static/images/source/thay-do-coc.jpg" width="512" height="316" loading="lazy" alt=""><div>Thầy đồ Cóc<span>Source: Đông Hồ print</span></div></div>
+          </div>
+          <div class="slide">
+            <div class="frame"><button class="zoom" type="button"><img src="static/images/story/ga-thu-hung.jpg" width="2200" height="1643" loading="lazy" alt="Four-panel comic about a rooster, a hen and their chicks"></button></div>
+            <div class="meta"><img src="static/images/source/ga-thu-hung.jpg" width="1024" height="768" loading="lazy" alt=""><div>Gà thư hùng<span>Source: Đông Hồ print</span></div></div>
+          </div>
+          <div class="slide">
+            <div class="frame"><button class="zoom" type="button"><img src="static/images/story/nong-nhan.jpg" width="2200" height="1200" loading="lazy" alt="Comic about a herd boy resting with a buffalo and her calf under a blossoming tree"></button></div>
+            <div class="meta"><img src="static/images/source/nong-nhan.jpg" width="512" height="378" loading="lazy" alt=""><div>Nông nhàn<span>Source: Đông Hồ print</span></div></div>
+          </div>
+          <div class="slide">
+            <div class="frame"><button class="zoom" type="button"><img src="static/images/story/dam-cuoi-chuot.jpg" width="2200" height="1200" loading="lazy" alt="Five-panel comic about a wedding procession of mice that must pay tribute to a cat"></button></div>
+            <div class="meta"><img src="static/images/source/dam-cuoi-chuot.jpg" width="1024" height="768" loading="lazy" alt=""><div>Đám cưới chuột<span>Source: Đông Hồ print</span></div></div>
+          </div>
+        </div>
+        <div class="controls"><span class="note">Select a page to enlarge it.</span><span class="count" data-count>1 / 5</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tint" id="user-study">
+    <div class="wide">
+      <div class="prose">
+        <div class="eyebrow">User study</div>
+        <h2>Blind ratings from 15 participants</h2>
+        <p>Ten STEM students, three educators and two AI engineers rated anonymized results in randomized order on a five-point Likert scale. ViFA-Council receives the highest overall rating on both tasks, with the lowest variance. For stories, the largest gains are in dialogue quality (3.96 vs. 3.54) and narrative coherence (3.94 vs. 3.66).</p>
+      </div>
+
+      <div class="pair">
+        <div class="table-wrap">
+          <table>
+            <caption>Outpainting<small>Seamless blending, style consistency, cultural relevance, overall.</small></caption>
+            <thead>
+              <tr><th scope="col">Method</th><th scope="col">Blend</th><th scope="col">Style</th><th scope="col">Culture</th><th scope="col">Overall</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">GPT-4o</th><td>3.18</td><td>3.42</td><td>3.52</td><td>3.37 ± 1.16</td></tr>
+              <tr><th scope="row">Gemini 3.1 Pro</th><td>3.36</td><td>3.48</td><td>3.55</td><td>3.46 ± 1.11</td></tr>
+              <tr><th scope="row">Claude Sonnet 4.6</th><td>3.95</td><td>3.64</td><td>3.96</td><td>3.85 ± 1.00</td></tr>
+              <tr class="ours"><th scope="row">ViFA-Council</th><td class="best">4.08</td><td class="best">4.08</td><td class="best">4.00</td><td class="best">4.05 ± 0.89</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption>Story generation<small>Cultural relevance, narrative coherence, dialogue quality, overall.</small></caption>
+            <thead>
+              <tr><th scope="col">Method</th><th scope="col">Culture</th><th scope="col">Narrative</th><th scope="col">Dialogue</th><th scope="col">Overall</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Gemini 3.1 Pro</th><td>3.56</td><td>3.66</td><td>3.54</td><td>3.59 ± 1.05</td></tr>
+              <tr class="ours"><th scope="row">ViFA-Council</th><td class="best">3.89</td><td class="best">3.94</td><td class="best">3.96</td><td class="best">3.93 ± 0.88</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="prose">
+        <h3>Limitations</h3>
+        <p>ViFA-Council is evaluated zero-shot, without fine-tuning on Vietnamese folk-art data, which may limit adaptation to subtle school-specific conventions. The user study measures perceived cultural relevance and does not include professional folk-art historians or artisans, so historical and iconographic authenticity still needs expert assessment. The framework depends on the underlying LLMs and image model, and its multiple parallel API calls cost more and take longer than single-model generation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="bibtex">
+    <div class="wide">
+      <div class="prose">
+        <div class="eyebrow">Citation</div>
+        <h2>BibTeX</h2>
+        <div class="bib">
+          <button class="copy" type="button" data-copy>Copy</button>
+          <pre id="bibtex-entry">@inproceedings{Dang2026MAPR,
+  title     = {ViFA-Council: Multi-Agent LLM Deliberation for Vietnamese Folk Art Generation},
+  author    = {Nguyen, Hai-Dang and Pham, Minh-Phuong and Dao, Thao Thi Phuong and Do, Trong-Le and Nguyen, Vinh-Tiep and Le, Trung-Nghia},
+  booktitle = {International Conference on Multimedia Analysis and Pattern Recognition (MAPR)},
+  year      = {2026}
+}</pre>
+        </div>
+        <h3 style="margin-top: 1rem;">Acknowledgment</h3>
+        <p>This research is funded by Vietnam National University - Ho Chi Minh City (VNU-HCM) under Grant Number B2026-18-17.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wide">
+    <div class="blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <span>© 2026 The ViFA-Council authors. Source paintings belong to the Đông Hồ and Hàng Trống traditions.</span>
+    <span>Page layout follows the <a href="https://nerfies.github.io" target="_blank" rel="noopener">Nerfies</a> project page.</span>
+  </div>
+</footer>
+
+<script src="static/js/index.js"></script>
+</body>
+</html>
