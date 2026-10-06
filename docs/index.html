@@ -88,7 +88,7 @@
         </div>
         <div class="cell">
           <div class="tag story">Educational story</div>
-          <div class="frame"><button class="zoom" type="button"><img src="static/images/story/thay-do-coc.jpg" width="2200" height="1200" alt="A four-panel Vietnamese comic about the toad teacher and his pupils, generated from the print"></button></div>
+          <div class="frame"><button class="zoom" type="button"><img src="static/images/story/thay-do-coc.jpg" width="1262" height="704" alt="A four-panel Vietnamese comic about the toad teacher and his frog pupils, drawn in the style of the print"></button></div>
         </div>
       </div>
       <figcaption>ViFA-Council takes one folk painting and a short directive. Three LLMs deliberate over a structured JSON specification, and the selected specification drives image synthesis for outpainting or a multi-panel educational story. Source: <em>Thầy Đồ Cóc</em>, Đông Hồ.</figcaption>
@@ -221,7 +221,9 @@
         <button type="button" role="tab" aria-selected="false" tabindex="-1" data-key="dam-cuoi-chuot">Đám cưới chuột</button>
         <button type="button" role="tab" aria-selected="false" tabindex="-1" data-key="thay-do-coc">Thầy đồ Cóc</button>
         <button type="button" role="tab" aria-selected="false" tabindex="-1" data-key="ga-thu-hung">Gà thư hùng</button>
-        <button type="button" role="tab" aria-selected="false" tabindex="-1" data-key="bat-tien">Bát tiên</button>
+        <button type="button" role="tab" aria-selected="false" tabindex="-1" data-key="ca-chau">Cá chậu</button>
+        <button type="button" role="tab" aria-selected="false" tabindex="-1" data-key="hai-ba-trung">Hai Bà Trưng</button>
+        <button type="button" role="tab" aria-selected="false" tabindex="-1" data-key="nong-nhan">Nông nhàn</button>
       </div>
 
       <div class="compare" id="op-thu-hoach" role="tabpanel">
@@ -244,9 +246,17 @@
         <div class="cell"><div class="tag">Source · Đông Hồ</div><div class="frame"><button class="zoom" type="button"><img src="static/images/source/ga-thu-hung.jpg" width="1024" height="768" loading="lazy" alt="Đông Hồ print of a rooster, a hen and their chicks"></button></div></div>
         <div class="cell"><div class="tag out">ViFA-Council</div><div class="frame"><button class="zoom" type="button"><img src="static/images/outpainting/ga-thu-hung.jpg" width="1800" height="1350" loading="lazy" alt="The rooster and hen print extended with more chicks, scattered grain and bamboo"></button></div></div>
       </div>
-      <div class="compare" id="op-bat-tien" role="tabpanel" hidden>
-        <div class="cell"><div class="tag">Source · Hàng Trống</div><div class="frame"><button class="zoom" type="button"><img src="static/images/source/bat-tien.jpg" width="960" height="447" loading="lazy" alt="Hàng Trống painting of the Eight Immortals crossing the sea"></button></div></div>
-        <div class="cell"><div class="tag out">ViFA-Council</div><div class="frame"><button class="zoom" type="button"><img src="static/images/outpainting/bat-tien.jpg" width="1456" height="720" loading="lazy" alt="The Eight Immortals painting extended with a wider sea, shoreline and sky"></button></div></div>
+      <div class="compare" id="op-ca-chau" role="tabpanel" hidden>
+        <div class="cell"><div class="tag">Source · Đông Hồ</div><div class="frame"><button class="zoom" type="button"><img src="static/images/source/ca-chau.jpg" width="1024" height="768" loading="lazy" alt="Đông Hồ print of three children catching fish in a basin"></button></div></div>
+        <div class="cell"><div class="tag out">ViFA-Council</div><div class="frame"><button class="zoom" type="button"><img src="static/images/outpainting/ca-chau.jpg" width="1800" height="1005" loading="lazy" alt="The fish-basin print extended into a tiled courtyard with jars, baskets and a bamboo fence"></button></div></div>
+      </div>
+      <div class="compare" id="op-hai-ba-trung" role="tabpanel" hidden>
+        <div class="cell"><div class="tag">Source · Đông Hồ</div><div class="frame"><button class="zoom" type="button"><img src="static/images/source/hai-ba-trung.jpg" width="1024" height="768" loading="lazy" alt="Đông Hồ print of the Trưng sisters riding elephants into battle"></button></div></div>
+        <div class="cell"><div class="tag out">ViFA-Council</div><div class="frame"><button class="zoom" type="button"><img src="static/images/outpainting/hai-ba-trung.jpg" width="1184" height="864" loading="lazy" alt="The Trưng sisters print extended with more soldiers, a tiger, palm trees and a title banner"></button></div></div>
+      </div>
+      <div class="compare" id="op-nong-nhan" role="tabpanel" hidden>
+        <div class="cell"><div class="tag">Source · Đông Hồ</div><div class="frame"><button class="zoom" type="button"><img src="static/images/source/nong-nhan.jpg" width="512" height="378" loading="lazy" alt="Đông Hồ print of a herd boy resting beside a buffalo under a tree"></button></div></div>
+        <div class="cell"><div class="tag out">ViFA-Council</div><div class="frame"><button class="zoom" type="button"><img src="static/images/outpainting/nong-nhan.jpg" width="1024" height="754" loading="lazy" alt="The herd boy print extended with a second buffalo, a lotus pond and distant fields"></button></div></div>
       </div>
     </div>
   </section>
@@ -291,7 +301,7 @@
             <div class="meta"><img src="static/images/source/hai-ba-trung.jpg" width="1024" height="768" alt=""><div>Hai Bà Trưng đánh giặc<span>Source: Đông Hồ print</span></div></div>
           </div>
           <div class="slide">
-            <div class="frame"><button class="zoom" type="button"><img src="static/images/story/thay-do-coc.jpg" width="2200" height="1200" loading="lazy" alt="Four-panel comic about a toad teacher and his pupils on the first day of class"></button></div>
+            <div class="frame"><button class="zoom" type="button"><img src="static/images/story/thay-do-coc.jpg" width="1262" height="704" loading="lazy" alt="Four-panel comic about a toad teacher, pupils serving tea, and a lesson on studying hard"></button></div>
             <div class="meta"><img src="static/images/source/thay-do-coc.jpg" width="512" height="316" loading="lazy" alt=""><div>Thầy đồ Cóc<span>Source: Đông Hồ print</span></div></div>
           </div>
           <div class="slide">
@@ -303,11 +313,15 @@
             <div class="meta"><img src="static/images/source/nong-nhan.jpg" width="512" height="378" loading="lazy" alt=""><div>Nông nhàn<span>Source: Đông Hồ print</span></div></div>
           </div>
           <div class="slide">
-            <div class="frame"><button class="zoom" type="button"><img src="static/images/story/dam-cuoi-chuot.jpg" width="2200" height="1200" loading="lazy" alt="Five-panel comic about a wedding procession of mice that must pay tribute to a cat"></button></div>
+            <div class="frame"><button class="zoom" type="button"><img src="static/images/story/dam-cuoi-chuot.jpg" width="1484" height="828" loading="lazy" alt="Four-panel comic about a wedding procession of mice that offers a carp and a bird to a cat to pass"></button></div>
             <div class="meta"><img src="static/images/source/dam-cuoi-chuot.jpg" width="1024" height="768" loading="lazy" alt=""><div>Đám cưới chuột<span>Source: Đông Hồ print</span></div></div>
           </div>
+          <div class="slide">
+            <div class="frame"><button class="zoom" type="button"><img src="static/images/story/bat-tien.jpg" width="2200" height="1200" loading="lazy" alt="Six-panel comic about the Eight Immortals crossing the sea and facing the Dragon King"></button></div>
+            <div class="meta"><img src="static/images/source/bat-tien.jpg" width="960" height="447" loading="lazy" alt=""><div>Bát tiên náo hải<span>Source: Hàng Trống painting</span></div></div>
+          </div>
         </div>
-        <div class="controls"><span class="note">Select a page to enlarge it.</span><span class="count" data-count>1 / 5</span></div>
+        <div class="controls"><span class="note">Select a page to enlarge it.</span><span class="count" data-count>1 / 6</span></div>
       </div>
     </div>
   </section>
